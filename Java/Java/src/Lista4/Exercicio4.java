@@ -17,7 +17,7 @@ public class Exercicio4
 				{
 					for (y=0; y<col; y++)
 					{
-						quadrado[x][y]=java.util.Random(1,10);
+						quadrado[x][y]= (int) (Math.random()*10);
 						if (x==y)
 						{
 							somaDiagonal=somaDiagonal + quadrado[x][y];
