@@ -36,7 +36,7 @@ public class Ecom
 					System.out.print("\n4 - Sair.");
 					System.out.print("\nSelecione o número da opção desejada: ");
 					menuOpcao = leia.nextInt();
-
+					System.out.print("==================================");
 
 					//Alterar estoque dos produtos (adicionar ou subtrair)
 					if(menuOpcao==1)
