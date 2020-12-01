@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+</body>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+Id<br>
+<input type=text readonly><br><br>
+Nome<br>
+<input type=text required><br><br>
+Categoria<br>
+<input type=text required><br><br>
+Data da Compra<br>
+<input type=date>
+<input type="submit" value =salvar>
+</body>
+</html>
+

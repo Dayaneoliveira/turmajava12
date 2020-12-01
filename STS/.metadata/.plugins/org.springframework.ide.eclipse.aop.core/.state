@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="primeiraAplicacaoFull"/>
+<aop-project name="demo"/>
+<aop-project name="projeto1"/>
+<aop-project name="minhaprimeiraapp"/>
+<aop-project name="minhasegundaapp-2"/>
+<aop-project name="Projeto3"/>
+</aop-reference-model>

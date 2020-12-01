@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+<script src="controller.js"></script>
+</head>
+</body>
+Id<br>
+<input type=text readonly><br><br>
+Nome<br>
+<input type=text required><br><br>
+Categoria<br>
+<input type=text required><br><br>
+Data da Compra<br>
+<input type=date>
+<input type="submit" value =salvar>
+</body>
+</html>
+

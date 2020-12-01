@@ -1,0 +1,11 @@
+package com.example.demo;
+
+import org.springframework.web.bind.annotation.RestController;
+
+
+@RestController //sempre chamar essa classe para o controller é o cerebro controlador
+public class Controller 
+{
+
+}
+
