@@ -1,40 +1,49 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="ISO-8859-1">
-<title>Insert title here</title>
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
 <script src="controller.js"></script>
+<meta charset="UTF-8">
 </head>
 <body>
 
-<a href="index.html">HOME</a> |
+	<a href="index.html"> HOME</a> |
+	<a href="cadastro.html"> CADASTRO</a> |
+	<a href="editar.html"> EDITAR</a> | PÃ¡gina de ediÃ§Ã£o
+	<hr>
+	<div ng-app="myApp" ng-controller='myCtrl'>
+		<!-- 	 Entradas -->
+		<p>
+			ID : <input type="number" ng-model="id">
+		</p>
+		<p>
+			Nome: <input type="text" ng-model="nome">
+		</p>
+		<p>
+			Categoria: <input type="text" ng-model="categoria">
+		</p>
 
-<a href="cadastro.html">CADASTRO</a> |
+		<button ng-click="qualquerPalavraBusca()">get all</button>
+		<button ng-click="salvar()">insert</button>
+		<button ng-click="delete()">delete</button>
+		<button ng-click="put()">put</button>
+		<!-- tabela      -->
+		<table border="4">
+			<tr>
+				<th>id</th>
+				<th>nome</th>
+				<th>dia</th>
+				<th>aÃ§Ãµes</th>
+			</tr>
+			<tr ng-repeat="manutencao in manutencoes">
+				<td>{{manutencao.id}}</td>
+				<td>{{manutencao.nome}}</td>
+				<td>{{manutencao.categoria}}</td>
+				<td>editar | excluir</td>
+			</tr>
+		</table>
+	</div>
 
-<a href="editar.html">EDITAR</a> |
-
-<hr>
-Pagina de Edição
-
-
-<hr>
-<div ng-app="myApp" ng-controller="myCtrl">
- 	<table border="1">
- 	<tr>
- 		<th>id</th>
- 		<th>nome</th>
- 		<th>categoria</th>
- 		<th>ações</th>
- 	</tr>
- 	<tr ng-repeat="manutencao in manutencoes">
- 		<td>{{manutencao.id}}</td>
- 		<td>{{manutencao.nome}}</td>
- 		<td>{{manutencao.categoria}}</td>
- 		<td>Botão</td>
- 		
- 		</tr>
- 	</table>
- </div>
 </body>
 </html>
