@@ -1,8 +1,9 @@
-package com.example.demo;
+package org.generation.blogPessoal.seguranca;
 
 import javax.transaction.Transactional;
 
-
+import org.generation.blogPessoal.model.Usuario;
+import org.generation.blogPessoal.repository.UsuarioRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -13,9 +14,9 @@ import org.springframework.stereotype.Repository;
 @Repository
 @Transactional
 
-public class ImplementsUserDetailsService implements UserDetailsService
+public class ImplementsUserDetailsService implements UserDetailsService // buscar o login e senha detalhes de usuario
 {
-	@Autowired
+	@Autowired // injetanta do repositorio do usuario ou seja o login
 	private UsuarioRepository usuarioRepository;
 	
 	@Override

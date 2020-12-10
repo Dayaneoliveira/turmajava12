@@ -1,4 +1,4 @@
-package com.example.demo;
+package org.generation.blogPessoal.seguranca;
 
 	import org.springframework.beans.factory.annotation.Autowired;
 	import org.springframework.context.annotation.Bean;
@@ -15,7 +15,7 @@ package com.example.demo;
 	import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
 	@Configuration
 	@EnableWebSecurity
-	public class Seguranca extends WebSecurityConfigurerAdapter{
+	public class Security extends WebSecurityConfigurerAdapter{
 			@Autowired
 			private ImplementsUserDetailsService userDetailsService;
 			
@@ -33,7 +33,9 @@ package com.example.demo;
 				.and().formLogin().permitAll()
 				.and().logout().logoutRequestMatcher(new AntPathRequestMatcher("/logout"));
 			}
-			
+	// Security autenticar o usuario e senha		
+	// Toda senha que digita ele vai verificar se realmente é verdadeira, por isso ele vai autenticar com criptografia, mas ele vai converter desecriptografar
+	// O sistema vai encriptar tanto a que esta salvando quando a Digitada, e ai vai comparar e autenticar
 	@Override
 	protected void configure(AuthenticationManagerBuilder auth) throws Exception{
 		auth.userDetailsService(userDetailsService)

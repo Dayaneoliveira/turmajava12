@@ -1,12 +1,17 @@
-package com.example.demo;
+package org.generation.blogPessoal.controller;
 
+import org.generation.blogPessoal.model.Usuario;
+import org.generation.blogPessoal.repository.UsuarioRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
 @org.springframework.stereotype.Service
 public class Service 
 {
-
+	// implentar a regra de negocio, instanciar o servico de criptografia
+	// Encoder poderia ser qlq nome ele vai crypy ou seja ler o GETSENHA/ 
+	// service é uma proteção por isso aparece **** quando esta inserindo a senha, pois ela nao pode ficar visivel.
+	// Salva criptografando a senha do usuario.
 	@Autowired
 	private UsuarioRepository repository;
 
