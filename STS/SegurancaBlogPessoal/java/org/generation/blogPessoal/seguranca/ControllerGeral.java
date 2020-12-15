@@ -1,7 +1,9 @@
-package org.generation.blogPessoal.seguranca;
+package java.org.generation.blogPessoal.seguranca;
 
-import org.generation.blogPessoal.model.Tema;
-import org.generation.blogPessoal.repository.TemaRepository;
+
+import java.org.generation.blogPessoal.model.Tema;
+import java.org.generation.blogPessoal.repository.TemaRepository;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;

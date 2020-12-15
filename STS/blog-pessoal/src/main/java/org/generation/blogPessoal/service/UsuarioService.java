@@ -52,6 +52,7 @@ public class UsuarioService
 		}
 		
 	}
+	// o sistema entenderá que não existe esse usuario no banco de dados.
 	return null;
 	}
 }

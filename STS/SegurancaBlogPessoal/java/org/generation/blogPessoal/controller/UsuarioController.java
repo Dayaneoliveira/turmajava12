@@ -1,6 +1,8 @@
-package org.generation.blogPessoal.controller;
+package java.org.generation.blogPessoal.controller;
 
-import org.generation.blogPessoal.model.Usuario;
+
+import java.org.generation.blogPessoal.model.Usuario;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

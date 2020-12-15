@@ -1,9 +1,10 @@
-package org.generation.blogPessoal.seguranca;
+package java.org.generation.blogPessoal.seguranca;
+
+import java.org.generation.blogPessoal.model.Usuario;
+import java.org.generation.blogPessoal.repository.UsuarioRepository;
 
 import javax.transaction.Transactional;
 
-import org.generation.blogPessoal.model.Usuario;
-import org.generation.blogPessoal.repository.UsuarioRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;

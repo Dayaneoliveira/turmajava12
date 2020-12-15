@@ -1,7 +1,9 @@
-package org.generation.blogPessoal.controller;
+package java.org.generation.blogPessoal.controller;
 
-import org.generation.blogPessoal.model.Usuario;
-import org.generation.blogPessoal.repository.UsuarioRepository;
+
+import java.org.generation.blogPessoal.model.Usuario;
+import java.org.generation.blogPessoal.repository.UsuarioRepository;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 

@@ -1,4 +1,4 @@
-package org.generation.blogPessoal;
+package java.org.generation.blogPessoal;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

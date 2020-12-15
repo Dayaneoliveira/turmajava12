@@ -1,4 +1,4 @@
-package org.generation.blogPessoal.model;
+package java.org.generation.blogPessoal.model;
 
 import java.io.Serializable;
 import java.util.Collection;
